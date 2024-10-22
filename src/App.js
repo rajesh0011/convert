@@ -20,7 +20,7 @@ function App() {
               <Routes>
                   <Route path='/' element={<Home />} />
                   <Route path='/jpgtowebp' element={<JpgToWebp />} />
-                  <Route path='/convert' element={<Convert />} />
+                  <Route path='/convert-text' element={<Convert />} />
                   <Route path='/imgtopdf' element={<ImgToPdf />} />
                   <Route path='/imagetogif' element={<ImageToGif />} />
                   <Route path='/imagescompressor' element={<ImagesCompressor />} />
