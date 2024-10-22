@@ -18,7 +18,7 @@ function App() {
           <Router>
           <Header></Header>
               <Routes>
-                  <Route path='/home' element={<Home />} />
+                  <Route path='/' element={<Home />} />
                   <Route path='/jpgtowebp' element={<JpgToWebp />} />
                   <Route path='/converttext' element={<ConvertText />} />
                   <Route path='/imgtopdf' element={<ImgToPdf />} />
