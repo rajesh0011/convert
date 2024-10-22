@@ -3,7 +3,7 @@ import Footer from './Components/Footer.js';
 import Header from './Components/Header.js'
 import Home from './Components/Home.js'
 import JpgToWebp from './Components/JpgToWebp.js';
-import Convert from './Components/Convert.js';
+import ConvertText from './Components/ConvertText.js';
 import ImgToPdf from './Components/ImgToPdf.js';
 import ImageToGif from './Components/ImageToGif.js';
 import ImagesCompressor from './Components/ImagesCompressor.js';
@@ -18,9 +18,9 @@ function App() {
           <Router>
           <Header></Header>
               <Routes>
-                  <Route path='/' element={<Home />} />
+                  <Route path='/home' element={<Home />} />
                   <Route path='/jpgtowebp' element={<JpgToWebp />} />
-                  <Route path='/convert-text' element={<Convert />} />
+                  <Route path='/converttext' element={<ConvertText />} />
                   <Route path='/imgtopdf' element={<ImgToPdf />} />
                   <Route path='/imagetogif' element={<ImageToGif />} />
                   <Route path='/imagescompressor' element={<ImagesCompressor />} />
