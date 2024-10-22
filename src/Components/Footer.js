@@ -1,6 +1,7 @@
 import React from 'react';
 // var Logo = require('../images/logo-convert.png');
 import { BrowserRouter as Router, Routes,Route, Link } from 'react-router-dom';
+import Logo from "../images/logo-convert.webp"
 
 
 function Footer() {
@@ -13,7 +14,7 @@ function Footer() {
                 
                         <div className="col-lg-4">
                             <div className='ab-footer'>
-                                <img src='./logo-convert.webp' className='f-logo' />
+                                <img src={Logo} className='f-logo' />
                                 <p className='ab-pro text-light mt-3 text-opacity-75'>
                                 Convert was born as a way to help developers, designers and students do more with less, grow faster and convert better. 
                                 It is our way of helping quality products reach audiences they deserve.

@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Logo from "../images/logo-convert.webp"
 import { BrowserRouter as Router, Routes,Route, Link } from 'react-router-dom';
 
 export default function Header() {
@@ -40,7 +41,7 @@ useEffect(() => {
     <>
         <Navbar collapseOnSelect expand="lg" className={isFixed ? 'navbar-fixed' : ''}>
       <Container>
-        <Link to="./" className='navbar-brand'> <img className='logo' src="./logo-convert.webp" /> </Link>
+        <Link to="./" className='navbar-brand'> <img className='logo' src={Logo} /> </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
@@ -67,8 +68,8 @@ useEffect(() => {
             </NavDropdown> */}
           </Nav>
           <Nav>
-            <Nav.Link to="https://wa.me/917900099842?text=Hi, I want to know more about this tool!" target="_blank" >Contact</Nav.Link>
-            <Nav.Link to="tel:7900099842" target='_blank' className='btn btn-warning call-btn'>
+            <Nav.Link href="https://wa.me/917900099842?text=Hi, I want to know more about this tool!" target="_blank" >Contact</Nav.Link>
+            <Nav.Link href="tel:7900099842" target='_blank' className='btn btn-warning call-btn'>
               +91-7900099842
             </Nav.Link>
           </Nav>
